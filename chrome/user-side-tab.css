@@ -1,0 +1,102 @@
+/* completely remove top tab bar */
+#TabsToolbar { visibility: collapse !important; }
+/*#tabbrowser-tabs { visibility: collapse; }*/
+
+/* hide "Tree Style Tab" dropdown */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+#sidebar-header {
+  display: none;
+}
+
+/* hide "Sidebery" dropdown */
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]
+#sidebar-header {
+  display: none;
+}
+
+/* make edge of sidebar thinner */
+#sidebar-splitter {display: none;}
+#sidebar-box {border-right: 1px solid ThreeDShadow}
+
+/* force-hide sidebar when fullscreen *
+#main-window[inFullscreen] #sidebar-box,
+#main-window[inFullscreen] #sidebar-splitter {
+  display: none !important;
+  width: 0px !important;
+}*/
+
+
+
+#unified-extensions-button {
+  scale: 125%;
+  margin-left: 3px !important;
+  margin-right: 1px !important;
+}
+#downloads-button {
+  scale: 120%;
+  margin-left: 4px !important;
+  margin-top: 2px !important;
+}
+
+
+/* make the sidebar primary with the URL bar "under" it /
+#sidebar-box, #sidebar-splitter {
+  position:relative !important;
+  top: -42px !important;
+  height: calc(100% + 42px);
+}
+#navigator-toolbox {
+  margin-left: 42px;
+  width: calc(100% - 42px);
+}*/
+
+/* no fullscreen transition time */
+#navigator-toolbox[fullscreenShouldAnimate] {
+  transition: 0ms !important;
+}
+
+
+
+
+/* move window close and minimize buttons to visible bar 
+:root {
+  --upperright-drag-space: 50px;
+}
+
+#TabsToolbar .titlebar-buttonbox-container {
+  visibility: visible !important;
+  position: absolute;
+  display: block;
+  top: 6px;
+  right: 0;
+  bottom: 6px;
+}
+#main-window[inFullscreen] #TabsToolbar .titlebar-buttonbox-container {
+  display: none !important;
+}
+#navigator-toolbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+#titlebar {
+    order: 1;
+    max-width: calc(var(--upperright-drag-space) + 66px);
+}
+#titlebar #TabsToolbar {
+    background-color: var(--toolbar-bgcolor);
+    background-image: var(--toolbar-bgimage)
+}
+#titlebar #TabsToolbar .titlebar-spacer {
+    background-color: rgba(0,0,0,0.05);
+    margin: 3px;
+    border-radius: 25%;
+    cursor: grab;
+}
+#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {
+    display: none;
+}
+#nav-bar {
+    order: 0;
+    width: calc(100% - calc(var(--upperright-drag-space) + 66px));
+}
+*/

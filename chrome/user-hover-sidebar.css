@@ -1,0 +1,39 @@
+/*
+====================================================
+Sidebery add-on autohide
+from https://www.reddit.com/r/FirefoxCSS/comments/yx99mj/autohide_sidebar_css_stopped_working_after/iwodcgm/
+====================================================
+*/
+
+:root {
+  --sidebar-min: 42px;
+  --sidebar-max: 250px;
+}
+
+#sidebar-box {
+  position: relative !important;
+  overflow-x: hidden !important;
+  min-width: var(--sidebar-min) !important;
+  max-width: var(--sidebar-min) !important;
+  border-right: 1px solid var(--sidebar-border-color);
+  z-index: 1;
+  transition: all 0.1s;
+}
+
+#sidebar-box:hover {
+  margin-right: calc(
+    calc(var(--sidebar-max) - var(--sidebar-min)) * -1
+  ) !important;
+  min-width: var(--sidebar-max) !important;
+}
+
+#sidebar-box:hover #sidebar-header {
+  min-width: var(--sidebar-max) !important;
+  /*max-width: var(--sidebar-max) !important;*/
+}
+
+/* hide when fullscreen */
+#main-window[inFullscreen] #sidebar-box {
+  display: none !important;
+  width: 0px !important;
+}
