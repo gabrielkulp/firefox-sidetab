@@ -19,6 +19,12 @@ Also consider installing some other excellent extensions like [uBlock Origin](ht
 
 If your sidebar is on the right side of the screen, the visual changes might not work right. In that case, do the following: press Ctrl+b to show the bookmarks sidebar. Click the big star at the top of the sidebar to reveal a dropdown menu, and then select "Move Sidebar Left". Finally, press Ctrl+e to switch back to the normal sidebar. This procedure shouldn't need to be repeated unless you manually move the sidebar to the right again.
 
+Some other Sidebery settings improve the experience when the sidebar is collapsed:
+
+- "Context menu" -> "Use native context menu" allows the menu to escape the bounds of the sidebar. Keeps the context menu open even when the sidebar collapses.
+- "Shot titles of pinned tabs" makes pinned tabs stack vertically instead of horizontally. This keeps all pinned tabs visible.
+- "Navigation bar" -> "Enabled elements" and remove "Create tabs panel" to see your current panel. Note that you can still create new panels easily by right-clicking a tab -> "Move to" -> "New panel".
+
 ## Usage
 
 Press Ctrl+e to open and close the tab sidebar. Drag and drop to reorganize tabs; drop on top of another tab to make it a child. Click on a site icon to collapse children tabs, and click on it again to uncollapse. When a site plays media, a speaker will appear in its tab, and clicking that speaker will toggle muting the tab.
