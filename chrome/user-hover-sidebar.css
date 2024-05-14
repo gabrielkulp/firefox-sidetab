@@ -6,8 +6,10 @@ from https://www.reddit.com/r/FirefoxCSS/comments/yx99mj/autohide_sidebar_css_st
 */
 
 :root {
-  --sidebar-min: 42px;
-  --sidebar-max: 250px;
+  --sidebar-min: 42px;  /* collapsed sidebar width */
+  --sidebar-max: 250px; /* expanded sidebar width */
+  --hover-delay: 1s;     /* time between mouse enter and expand */
+  --hover-speed: 0.1s;  /* duration of expand animation */
 }
 
 #sidebar-box {
@@ -17,7 +19,8 @@ from https://www.reddit.com/r/FirefoxCSS/comments/yx99mj/autohide_sidebar_css_st
   max-width: var(--sidebar-min) !important;
   border-right: 1px solid var(--sidebar-border-color);
   z-index: 1;
-  transition: all 0.1s;
+  transition: all var(--hover-speed);
+  transition-delay: 0;
 }
 
 #sidebar-box:hover {
@@ -25,6 +28,7 @@ from https://www.reddit.com/r/FirefoxCSS/comments/yx99mj/autohide_sidebar_css_st
     calc(var(--sidebar-max) - var(--sidebar-min)) * -1
   ) !important;
   min-width: var(--sidebar-max) !important;
+  transition-delay: var(--hover-delay);
 }
 
 #sidebar-box:hover #sidebar-header {

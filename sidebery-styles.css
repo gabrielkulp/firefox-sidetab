@@ -27,7 +27,7 @@
 
 
 /* Adjust styles if sidebar is collapsed */
-@media screen and (max-width: 49px) {
+@media screen and (max-width: 55px) {
   #root {
     --tabs-indent: unset;
   }
@@ -43,9 +43,15 @@
     scale: 125%;
     z-index: 99 !important;
   }
+  .Tab div.close {
+    display: none !important;
+  }
+  .Tab .exp {
+    display: none;
+  }
 }
 /* And if expanded */
-@media screen and (min-width: 49px) {
+@media screen and (min-width: 55px) {
   .Tab .audio {
     left: 30px !important;
     scale: 125%;
