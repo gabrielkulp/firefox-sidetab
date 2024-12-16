@@ -22,7 +22,7 @@ If your sidebar is on the right side of the screen, the visual changes might not
 Some other Sidebery settings improve the experience when the sidebar is collapsed:
 
 - "Context menu" -> "Use native context menu" allows the menu to escape the bounds of the sidebar. Keeps the context menu open even when the sidebar collapses.
-- "Shot titles of pinned tabs" makes pinned tabs stack vertically instead of horizontally. This keeps all pinned tabs visible.
+- "Show titles of pinned tabs" makes pinned tabs stack vertically instead of horizontally. This keeps all pinned tabs visible.
 - "Navigation bar" -> "Enabled elements" and remove "Create tabs panel" to see your current panel. Note that you can still create new panels easily by right-clicking a tab -> "Move to" -> "New panel".
 
 ## Usage
