@@ -18,7 +18,7 @@ from https://www.reddit.com/r/FirefoxCSS/comments/yx99mj/autohide_sidebar_css_st
   min-width: var(--sidebar-min) !important;
   max-width: var(--sidebar-min) !important;
   border-right: 1px solid var(--sidebar-border-color);
-  z-index: 1;
+  z-index: 3;
   transition: all var(--hover-speed);
   transition-delay: 0;
 }
